@@ -6,8 +6,8 @@ export default function Header() {
   {/* <div className="w-70 h-125 border-2 border-blue-500 p-4"> */}
   
   <div className="flex flex-col gap-7 py-16">
-    <div className="border-2 rounded-2xl border-gray-200 p-2 text-center  text-white w-72.5 h-10.5  px-3.5 py-2.2">
-       <span className='border rounded-sm w-8.5 h-4.5 p-2.5 '>New </span>
+    <div className="inline-flex  gap-3 items-center border-2 rounded-[40px] border-gray-700 p-2 text-center w-80 h-10.5  px-5 py-2 whitespace-nowrap font-normal text-[16px] text-purple-400 ">
+       <span className='flex items-center justify-center border-black rounded-[40px] w-10 h-4.5 p-2.5 bg-purple-600 text-[10px] font-bold text-white'>New </span>
       Latest Integration Just Allowed
     </div>
 
