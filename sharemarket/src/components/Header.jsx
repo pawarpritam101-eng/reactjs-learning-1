@@ -3,9 +3,9 @@ import App from '../assets/appwide.png'
 
 export default function Header() {
   return (
-   <section className="bg-black  w-full text-white flex justify-center">
+   <section className="bg-black  w-full  text-white ">
   {/* Content wrapper */}
-  <div className="w-full max-w-300 px-6 pt-24 text-center">
+  <div className="w-full max-w-300 mx-auto px-6 pt-24 text-center">
 
     {/* Badge */}
     <div className="flex justify-center">
@@ -19,9 +19,9 @@ export default function Header() {
 
     {/* Heading */}
     <div className="mt-10 flex justify-center">
-      <h1 className="text-[82px] leading-[84px] font-medium max-w-[800px]">
+      <h1 className="text-[82px] leading-21 font-medium max-w-200">
         Boost your <br />
-        <span className="bg-gradient-to-b from-white bg-clip-text text-transparent to-[rgba(170,116,207,1)] ">
+        <span className="bg-linear-to-b from-white bg-clip-text text-transparent to-[#763f9a] ">
           rankings with AI.
         </span>
       </h1>
@@ -29,7 +29,7 @@ export default function Header() {
 
     {/* Description */}
     <div className="mt-6 flex justify-center">
-      <p className="text-[20px] text-gray-200 max-w-[520px] leading-relaxed">
+      <p className="text-[20px] text-gray-200 max-w-130 leading-relaxed">
         Elevate your site’s visibility effortlessly with AI, where smart technology meets user-friendly SEO tools.
       </p>
     </div>
@@ -42,21 +42,22 @@ export default function Header() {
   </div>
 </div>
 
-<div className="relative mx-auto">
-  <div className="absolute -bottom-10 left-1/2 -translate-x-1/2
-    w-[90%] h-[60%]
-    bg-purple-600/40
-    blur-3xl -z-10" />
+{/* Image Container */}
+ <div className="relative w-full flex justify-end mt-15 pl-28">
+  <div className='absolute bottom-22 flex items-center justify-center z-5'>
+ <div className="w-260 h-150  bg-purple-500/40  blur-[100px] z-0 rounded-lg"/></div>
+  <div className="relative z-10  rounded-lg border mr-22 border-white/10 bg-black/60
+   overflow-hidden">
+  <img src={App} alt="App Preview" className="h-140 w-260 border border-black rounded-lg object-cover" />
+    </div>
+    </div>
+    
+    </div>
 
-  <img src={App} className="rounded-2xl" />
-</div>
 
-
-
-  </div>
+   {/* alldiv */}
 </section>
 
 
   )
 }
-
